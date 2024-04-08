@@ -57,8 +57,96 @@
   <div class="px-5 pt-5 my-5 text-right border-bottom">
     <h1 class="display-4 fw-bold text-body-emphasis">Solución del modelo</h1>
     <div class="col-lg-12 mx-auto">
-      <p class="lead mb-4">La optimización de sistemas implica encontrar las variables óptimas que maximicen o minimicen una función objetivo, cumpliendo con un conjunto de restricciones. Estas variables representan decisiones que afectan al sistema, como la asignación de recursos o niveles de producción. La solución resultante se denomina "solución óptima" y se busca mediante técnicas de optimización que exploran el espacio de soluciones posibles. Es un proceso crucial que equilibra objetivos y limitaciones del sistema, requiriendo análisis y herramientas especializadas para obtener resultados efectivos y eficientes.</p>
+      <p class="lead mb-4">Es la fase de desarrollo de procedimientos basado en computadora para obtener soluciones a partir de modelos 
+        matemáticos en un estudio de Investigación de Operaciones (IO). Se destaca que, si bien esta fase es importante, no es 
+        necesariamente la más crucial del estudio. Se aplica uno de los algoritmos estándar (procedimientos de solución sistemática) 
+        de IO en una computadora utilizando uno de los numerosos paquetes de software disponibles. Para los profesionales experimentados 
+        en IO, encontrar una solución es la parte divertida del proceso, mientras que el verdadero trabajo se encuentra en los pasos 
+        anteriores y posteriores, como el análisis de post optimalidad.
+
+        Se centra en cómo obtener soluciones para diferentes tipos de modelos matemáticos, pero se enfatiza que estas soluciones son óptimas 
+        sólo con respecto al modelo utilizado. No se puede garantizar que la solución óptima para el modelo sea la mejor para el problema 
+        real, debido a las incertidumbres asociadas con los problemas reales.
+
+        En lugar de soluciones perfectas, se sugiere que el éxito de un estudio de buscar IO debe evaluarse en términos de si proporciona una 
+        guía mejor para la acción que otros medios disponibles. 
+</p> 
+      </div>
+      <ul>
+<div class="col-lg-12 mx-auto"> 
+      <p class="lead mb-6">  <li><h4>Formulación Y Solución De Modelos De Programación Lineal En Una Hoja De Cálculo: </h4></li>Los 
+  paquetes de hojas de cálculo, como Excel, son una herramienta conocida para analizar y resolver problemas pequeños de programación 
+  lineal. Es sencillo introducir en una hoja de cálculo las características principales de un modelo de programación lineal, entre ellas,
+  todos sus parámetros. Sin embargo, este software puede hacer mucho más que sólo desplegar datos. Si se incluye cierta información 
+  adicional, la hoja de cálculo se puede usar para analizar con rapidez soluciones potenciales. 
+  El Excel Solver puede aplicar el método símplex para encontrar una solución óptima para el modelo.
+        </p>
     </div>
+
+        <div class="col-lg-12 mx-auto">  
+      <p class="lead mb-6"><li><h4>Solución de problemas de programación lineal: </h4></li>método símplex Es el momento de comenzar 
+        a estudiar el método símplex, un procedimiento general para resolver problemas de programación lineal. Desarrollado por George 
+        Dantzig en 1947, se ha comprobado su extraordinaria eficiencia, y se usa en forma rutinaria para resolver problemas grandes en 
+        las computadoras de hoy en día. Excepto en el caso de problemas muy pequeños, se ejecuta siempre en una computadora y existe una 
+        amplia variedad de paquetes complejos de software para ello. También se usan extensiones y variaciones del método símplex para 
+        realizar análisis post óptimo (que incluye el análisis de sensibilidad) del modelo. 
+
+        Procedimientos de solución de problemas de asignación Se dispone de procedimientos alternativos de solución para resolver aquellos que 
+        no son mucho más grandes. Se pueden resolver con rapidez mediante el método símplex general, y quizá sea conveniente usar un 
+        paquete básico como Excel y su Solver que utilice este método. los problemas de asignación grandes se pueden resolver mucho más 
+        rápido si se usan procedimientos de solución más específicos. 
+        </p>
+    </div>
+
+        <div class="col-lg-12 mx-auto">  
+      <p class="lead mb-6"><li><h4>Algunas Perspectivas Acerca De La Solución De Problemas De Programación Entera: </h4></li>
+          Puede parecer que la solución de problemas de PE es sencilla. Después de todo, los problemas de programación lineal se 
+          pueden resolver en forma eficiente, y la única diferencia es que la PE tiene muchas menos soluciones que considerar. 
+          En realidad, se garantiza que los problemas de PE pura con región factible acotada tengan sólo un número finito de soluciones 
+          factibles. Desafortunadamente, existen dos falacias en esta línea de razonamiento. 
+
+          Una es que tener un número finito de soluciones factibles asegura que el problema se puede resolver. Los números finitos 
+          pueden ser astronómicamente grandes. Por ejemplo, Si se tienen n variables, existen 2n soluciones que considerar. 
+          En consecuencia, cada vez que no aumenta en 1, el número de soluciones se duplica. Este patrón se llama crecimiento 
+          exponencial de la dificultad del problema. Con n 510, existen más de mil soluciones (1024); en razón de ello, aun las 
+          computadoras más eficientes son incapaces de realizar una enumeración exhaustiva que verifique la factibilidad de cada 
+          solución y, de ser factible, que calcule el valor de la función objetivo en problemas de PEB con unas cuantas docenas de 
+          variables, sin mencionar los problemas de PE general con el mismo número de variables enteras. Por fortuna, empezando con 
+          las ideas que se describirán en secciones subsecuentes, en la actualidad los mejores algoritmos de PE son ampliamente 
+          superiores al método de la enumeración exhaustiva. La mejora en las dos décadas pasadas ha sido sorprendente. En la actualidad 
+          pueden resolverse en segundos mediante el uso de paquetes de software comerciales (como, por ejemplo, el paquete CPLEX). 
+          Este aumento dramático en la velocidad se debe al enorme progreso en tres áreas: mejoras significativas en los algoritmos (así como en otros algoritmos de PE), mejoras sorprendentes en algoritmos de programación lineal muy utilizados en los algoritmos de programación entera y el notable incremento de la velocidad de las computadoras (entre las cuales se incluyen las de escritorio). Como consecuencia de todo ello, una gran cantidad de problemas de gran tamaño están siendo resueltos en la actualidad, lo que hubiera sido imposible en las décadas pasadas. Los mejores algoritmos de hoy en día son capaces de resolver algunos problemas PEB (Plan de Ejecución BIM) puros con cientos de miles de variables. Sin embargo, debido al crecimiento exponencial, ni los mejores algoritmos garantizan la solución de todos los problemas relativamente pequeños (con menos de 100 variables binarias o enteras). Según sus características, ciertos problemas pequeños pueden ser más difíciles de resolver que algunos más grandes. Cuando se trata con variables enteras generales en lugar de variables binarias, el tamaño de los problemas que pueden resolverse tiende a ser mucho más pequeño. Sin embargo, hay excepciones. Por ejemplo, hace varios años, la versión profesional de CPLEX 8.0 resolvió de manera exitosa un problema de PE con 215 mil variables enteras generales, 75 mil restricciones funcionales y 6 millones de coeficientes de restricción distintos de cero. Con todo, las versiones más actuales de CPLEX son mucho más poderosas. La segunda falacia es que si se eliminan algunas soluciones factibles (las no enteras) de un problema de programación lineal, será más fácil resolverlo. Por el contrario, sólo cuando todas estas soluciones factibles están ahí, se puede garantizar que existe una solución factible en el vértice (FEV) [y por ende la solución básica factible (BF) correspondiente] que es óptima para el problema completo. Esta garantía es la clave de la extraordinaria eficiencia del método símplex. Como resultado, en general es mucho más sencillo resolver los problemas de programación lineal que los de programación entera. Es lógico, entonces, que la mayor parte de los algoritmos exitosos de programación entera incorporan un algoritmo de programación lineal, como el método símplex (o el método símplex dual) lo más que puedan, y que relacionen partes del problema de PE bajo consideración con el problema correspondiente de programación lineal (es decir, el mismo problema con la restricción de valores enteros eliminada). En cualquier problema dado de PE, el problema correspondiente de programación lineal se conoce como su relajamiento de PL. El algoritmo que se presenta en las dos secciones siguientes ilustra cómo se puede usar una sucesión de relajamientos de PL para
+
+          porciones de un problema de programación entera, con objeto de resolver de manera eficaz un problema completo de PE. Existe 
+          una situación especial en la que no es más difícil resolver el problema de PE que resolver una vez su relajamiento de PL al 
+          aplicar el método símplex; en este caso, la solución del relajamiento de PL satisface la restricción de valores enteros del 
+          problema de PE. Cuando ocurre esto, la solución también debe ser óptima para el problema de PE, puesto que se trata de la 
+          mejor solución entre todas las soluciones factibles del relajamiento de PL, que incluyen todas las soluciones factibles del 
+          problema de PE. Entonces, es normal que un algoritmo de programación entera comience con la aplicación del método símplex a 
+          su relajamiento de PL, para verificar si tiene lugar este acontecimiento fortuito. Aunque, sin duda, casi siempre es accidental que la solución óptima del relajamiento de PL sea entera, en realidad existen varios tipos especiales de problemas de PE para los que este resultado se puede garantizar. Se pueden manejar como problemas de programación lineal, puesto que se pueden resolver por completo al aplicar las versiones simplificadas del método símplex. Aunque toda esta simplificación no es usual, con frecuencia los problemas de PE que surgen en la práctica tienen alguna estructura especial que se puede aprovechar para simplificarlos. A veces se pueden resolver con éxito versiones muy grandes de estos problemas. Cada vez son más importantes los algoritmos especiales diseñados específicamente para explotar ciertos tipos de estructuras especiales de programación entera. En consecuencia, los tres factores determinantes de la dificultad computacional de un problema de PE son :
+</p>
+    </div>
+
+        <div class="col-lg-12 mx-auto">  
+      <p class="lead mb-6"><li><h4>1). </h4></li> El número de variables enteras.
+        </p> 
+    </div>
+
+        <div class="col-lg-12 mx-auto">  
+      <p class="lead mb-6"><li><h4>2). </h4></li> Si las variables enteras son binarias o generales. 
+        </p> 
+    </div>
+       <div class="col-lg-12 mx-auto">  
+      <p class="lead mb-6"><li><h4>3). </h4></li> Estructura especial del problema. 
+        </p> 
+    </div>
+      </ul>
+     <div class="col-lg-12 mx-auto">  
+      <p class="lead mb-6"> Esta situación es opuesta a la de programación lineal, en donde el número de restricciones (funcionales) es mucho más importante que el número de variables. En programación entera, el número de restricciones tiene alguna importancia en especial si se van a resolver los relajamientos de PL, pero es estrictamente secundario en el caso de los otros tres factores. En realidad, existen casos en los que aumentar el número de restricciones disminuye el tiempo de cálculo, puesto que se reduce el número de soluciones factibles. En los problemas de PEM es el número de variables enteras y no el número total de variables lo que es importante, pues las variables continuas casi no tienen efecto sobre el esfuerzo computacional. Debido a que, en general, es mucho más difícil resolver los problemas de PE que los de programación lineal, a veces es tentador usar el procedimiento aproximado y aplicar el método símplex al relajamiento de PL y después redondear los valores no enteros a enteros en la solución que se obtuvo. Este enfoque puede ser adecuado en algunas aplicaciones, en especial si los valores de las variables son tan grandes que el redondeo introduce un error muy pequeño; sin embargo, debe tenerse cuidado al poner en práctica este procedimiento, pues se corren dos riesgos. Una desventaja es que una solución óptima de programación lineal no necesariamente es factible después de redondear. Con frecuencia es difícil decidir en qué sentido redondear para conservar la factibilidad. Incluso, 
+        podría ser necesario cambiar el valor de algunas variables en una o más unidades después de redondear.
+        </p> 
+        </div>
+    
     <div class="overflow-hidden" style="max-height: 720px;">
       <div class="container px-5">
         <img src="img/Carrusel7.jpg" class="img-fluid ">
